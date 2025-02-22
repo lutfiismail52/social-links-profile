@@ -1,0 +1,102 @@
+:root {
+  --grey-900: hsl(0, 0%, 8%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-700: hsl(0, 0%, 20%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/static/Inter-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/static/Inter-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--grey-900);
+}
+
+.container {
+  background-color: var(--grey-800);
+  width: 90%;
+  margin: 64px auto;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.img {
+  width: 30%;
+  border-radius: 100%;
+  margin-bottom: 16px;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.address {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #c4e73c;
+  margin-bottom: 10px;
+}
+
+.bio {
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: #ddd;
+  margin: 28px 0;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.link {
+  display: block;
+  background-color: var(--grey-700);
+  width: 100%;
+  padding: 16px;
+  color: #fff;
+  margin-top: 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.link:hover {
+  background-color: #c4e73c;
+  color: var(--grey-900);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Media Query */
+@media screen and (min-width: 480px) {
+  .container {
+    width: 400px;
+  }
+}
